@@ -9,7 +9,8 @@ team: Pair project with Riccardo Padoan
 tools: [STAR-CCM+, Lagrangian spray, k–ε RANS, Combustion chemistry, Python]
 featured: true
 order: 3
-cover: images/cover.png
+cover: images/cover-vortex.png
+math: true
 ---
 
 ## Problem
@@ -51,13 +52,18 @@ Each parameter was varied around the baseline while the others were kept fixed.
 | Droplet-size distribution | standard vs maximum diameter halved | Smaller droplets evaporate faster and shorten the liquid length |
 | Parcel streams | 10 vs 100 000 | Many streams are needed to reproduce the imposed droplet-size law |
 
+<figure>
+  <img src="images/sensitivity.png" alt="Vapour penetration against time for three turbulence constants and three near-nozzle cell sizes, compared with the experiment">
+  <figcaption>Vapour penetration for three values of the turbulence constant (left) and three near-nozzle cell sizes (right).</figcaption>
+</figure>
+
 ## Reacting case: ignition
 
 Ignition was defined as the time when the maximum gas temperature reaches 2000 K. The reduced mechanism ignites at 0.31 ms and the global mechanism at 0.26 ms, against a measured ignition delay of 0.41 ms. The reduced mechanism is closer to the experiment and gives a more realistic flame development, at a higher cost per time step.
 
 <figure>
-  <img src="images/max-temperature.png" alt="Maximum gas temperature against time for the two mechanisms, with ignition markers">
-  <figcaption>Maximum gas temperature for the reduced (Yao54) and global mechanisms; dashed lines mark the ignition times and the measured value.</figcaption>
+  <img src="images/ignition.gif" alt="Animated plot of maximum gas temperature for the two mechanisms, with ignition times marked">
+  <figcaption>Maximum gas temperature for the reduced (Yao54) and global mechanisms, with the ignition times and the measured value.</figcaption>
 </figure>
 
 ## What I learned
