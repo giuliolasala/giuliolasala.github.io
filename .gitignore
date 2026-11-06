@@ -16,3 +16,7 @@ desktop.ini
 *.asv
 *.m~
 .vscode/
+
+# MATLAB outputs generated when the project code is run
+projects/*/code/data/results/
+projects/*/code/figures/
