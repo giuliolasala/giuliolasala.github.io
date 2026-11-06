@@ -36,7 +36,7 @@ Results and figures are written to `data/results/` and `figures/`, which are cre
 ## Credits
 
 The files in `common_functions/` (`StaggeredMesh2dSquare.m`, `WLSpolyfit.m`, `MYpolyval.m`, `PlotToFileColorPDF.m`)
-and the reference solution in `data/benchmark/` were provided by the teachers of DTU course 41317 and are included only so that the code runs.
+and the reference solution in `data/benchmark/` were provided by Prof. Harry B. Bingham (DTU) for course 41317 and are included only so that the code runs.
 All other files were written by Giulio La Sala.
 
 The Re = 1000 benchmark values are taken from C.-H. Bruneau and M. Saad, "The 2D lid-driven cavity problem revisited", *Computers & Fluids*, 2006.

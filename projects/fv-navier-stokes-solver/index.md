@@ -9,7 +9,7 @@ team: Individual project
 tools: [MATLAB, Finite volumes, Staggered grid, Sparse LU]
 featured: true
 order: 2
-cover: images/cover.png
+cover: images/cover-cavity.png
 math: true
 links:
   - label: Source code (MATLAB)
@@ -81,4 +81,4 @@ Reusing the LU factorisation of the Poisson matrix cut the cost of the pressure 
 
 Explicit Euler time stepping is simple and well suited to verification, but it is only conditionally stable: the time step shrinks quickly as the grid is refined or the Reynolds number increases. An implicit or semi-implicit scheme would be the natural next step.
 
-<p class="note">Helper functions for mesh generation, polynomial fitting and plotting, and a small reference solution, were provided by the teachers of DTU course 41317; everything else in the code was written by me. Benchmark data: Bruneau and Saad, <em>Computers &amp; Fluids</em>, 2006.</p>
+<p class="note">Helper functions for mesh generation, polynomial fitting and plotting, and a small reference solution, were provided by Prof. Harry B. Bingham for DTU course 41317; everything else in the code was written by me. Benchmark data: Bruneau and Saad, <em>Computers &amp; Fluids</em>, 2006.</p>
