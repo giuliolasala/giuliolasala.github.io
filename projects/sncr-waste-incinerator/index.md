@@ -8,7 +8,7 @@ date_label: October 2025
 team: Individual project
 tools: [MATLAB, Chemical kinetics, Stiff ODEs, Plug-flow reactor, Constrained optimisation]
 order: 4
-cover: images/cover.png
+cover: images/cover-map.png
 math: true
 links:
   - label: Source code (MATLAB)
@@ -52,6 +52,13 @@ The measured furnace temperature fluctuates between 860 and 960 °C. Its distrib
   <img src="images/beta-control-law.png" alt="Measured temperature distribution with the segment boundaries, and the resulting three-step ammonia dosing law">
   <figcaption>Measured temperature distribution with the segment boundaries (top) and the resulting three-step dosing law β(T) (bottom).</figcaption>
 </figure>
+
+<figure>
+  <img src="images/operating-map-v2.png" alt="Map of NO reduction over furnace temperature and ammonia ratio, with the 15 ppm slip limit and the three-step dosing law">
+  <figcaption>Operating map from the kinetic model: NO reduction over temperature and β, with the 15 ppm slip limit (dashed line) and the three-step dosing law (red). In the hatched area the NH₃ slip exceeds the limit.</figcaption>
+</figure>
+
+The map shows the trade-off behind the dosing law: higher β always removes more NO, but at low temperature the extra ammonia does not react and leaves as slip. The law follows the slip limit upwards as the furnace gets hotter; in the coldest bins, below about 885 °C, even the minimum dose slightly exceeds the limit, which is where the 4.3% of violations comes from.
 
 | Indicator | Value |
 |---|---|

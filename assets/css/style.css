@@ -77,7 +77,8 @@ a:focus-visible, .card:focus-visible, .btn:focus-visible { outline: 2px solid va
 .btn { display: inline-block; padding: 8px 16px; border: 1px solid var(--accent); border-radius: 8px; text-decoration: none; font-weight: 500; font-size: .92rem; }
 .btn:hover { background: var(--accent-soft); }
 
-.prose { max-width: 72ch; }
+.prose { max-width: 960px; }
+.prose > p, .prose > ul, .prose > ol, .prose > h2, .prose > h3, .prose > .note { max-width: 72ch; }
 .prose h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; margin: 40px 0 10px; }
 .prose h3 { font-size: 1.1rem; margin: 28px 0 8px; }
 .prose figure { margin: 28px 0; }
