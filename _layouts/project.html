@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="project">
+  <p class="eyebrow"><a href="{{ '/' | relative_url }}#projects">← All projects</a></p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+  <dl class="facts">
+    {% if page.context %}<div><dt>Context</dt><dd>{{ page.context }}</dd></div>{% endif %}
+    {% if page.date_label %}<div><dt>Date</dt><dd>{{ page.date_label }}</dd></div>{% endif %}
+    {% if page.team %}<div><dt>Team</dt><dd>{{ page.team }}</dd></div>{% endif %}
+    {% if page.tools %}<div><dt>Tools</dt><dd>{{ page.tools | join: ', ' }}</dd></div>{% endif %}
+  </dl>
+  {% if page.links %}
+  <p class="actions">
+    {% for l in page.links %}<a class="btn" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+  </p>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

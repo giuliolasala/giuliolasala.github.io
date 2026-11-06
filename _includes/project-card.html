@@ -1,0 +1,9 @@
+<a class="card" href="{{ include.p.url | relative_url }}">
+  {% if include.p.cover %}<img src="{{ include.p.url | relative_url }}{{ include.p.cover }}" alt="" loading="lazy">{% endif %}
+  <div class="card-body">
+    <p class="card-meta">{{ include.p.context }}</p>
+    <h3>{{ include.p.title }}</h3>
+    <p>{{ include.p.card | default: include.p.summary }}</p>
+    {% if include.p.tools %}<p class="tags">{% for t in include.p.tools limit: 4 %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+  </div>
+</a>

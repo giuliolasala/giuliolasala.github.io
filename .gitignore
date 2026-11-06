@@ -1,0 +1,18 @@
+# Private working documents (plans, maps): never published
+_private/
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# MATLAB autosave and editor files
+*.asv
+*.m~
+.vscode/

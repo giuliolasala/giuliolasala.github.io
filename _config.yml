@@ -1,0 +1,21 @@
+title: Giulio La Sala
+tagline: Mechanical engineer · CFD, combustion and turbomachinery
+description: Portfolio of engineering projects in computational fluid dynamics, combustion modelling, turbomachinery and numerical methods.
+url: https://giuliolasala.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Giulio La Sala
+  github: giuliolasala
+  linkedin: ""   # add the LinkedIn profile slug once the profile is ready
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  input: GFM
+
+exclude:
+  - README.md
+  - _private
+  - "**/*.asv"

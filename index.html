@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign projects = site.pages | where: "layout", "project" | sort: "order" %}
+<section class="hero">
+  <h1>{{ site.author.name }}</h1>
+  <p class="tagline">{{ site.tagline }}</p>
+  <p class="about">MSc student in Mechanical Engineering at Politecnico di Torino, graduating in December 2026, with a year at the Technical University of Denmark (DTU) as an Erasmus+ student. My master's thesis, carried out at DTU, applies CFD and Bayesian optimisation to the shape of supersonic stator blades for two-phase turbines. This page collects selected projects in CFD, combustion, numerical methods and machine design, with summaries, figures and, where possible, the source code.</p>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Featured</h2>
+  <div class="grid grid-featured">
+    {% for p in projects %}{% if p.featured %}{% include project-card.html p=p %}{% endif %}{% endfor %}
+  </div>
+
+  <h2 class="section-title">More projects</h2>
+  <div class="grid">
+    {% for p in projects %}{% unless p.featured %}{% include project-card.html p=p %}{% endunless %}{% endfor %}
+  </div>
+</section>
